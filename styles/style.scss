@@ -1,15 +1,16 @@
-@use "utils/variables";
-@use "utils/colors";
-@use "utils/mixins";
-@use "utils/animations";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/colors";
 
-@use "components/buttons";
+@import "./utils/animations";
 
-@use "base/header";
-@use "base/general";
-@use "base/footer";
+@import "./components/buttons";
 
-@use "page/homepage"
+@import "./base/header";
+@import "./base/general";
+@import "./base/footer";
+
+@import "./page/homepage"
 
 
 
