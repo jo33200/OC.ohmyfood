@@ -1,0 +1,80 @@
+main{
+    width: 100%;
+    @include FlexColumnCenter();
+    gap: 30px;
+
+}
+
+.geoloc {
+    width: 100%;
+    background-color: #eaeaea;
+    @include FlexRowCenter();
+    gap: 20px;
+    }
+
+.title{
+    @include FlexColumnCenter();
+    gap: 20px;
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+}
+.fonctionnement{
+    width: 100%;
+    background-color: white;
+}
+.restaurants{
+    width: 100%;
+    @include FlexColumnCenter();
+    
+
+    ul{
+        padding: 0px;
+        margin: 0px;
+        @include FlexColumnCenter();
+        gap: 20px;
+        
+        .cards{
+        width: 90%;
+        height: 251px;
+        @include FlexColumnCenter();
+        border-radius: 20px;
+        background-color: white;
+        display: contents;
+        }
+    }
+}
+.picture-restaurant{
+    width: 100%;
+    position: relative;
+    
+
+    img{
+        width: 346px;
+        height: 231px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+        
+    .new{
+        position: absolute;
+        top: 1%;
+        left: 70%;
+}
+    
+}
+.under-picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 22px;
+        height: 21px;
+        
+    }
+}

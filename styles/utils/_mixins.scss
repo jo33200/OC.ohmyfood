@@ -1,0 +1,21 @@
+@import "./colors";
+
+@mixin box-shadow{
+    box-shadow: 2px 1px 8px -3px colors.$lightgrey;
+}
+@mixin FlexRowCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@mixin FlexColumnCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin Shadow{
+    box-shadow: black 0px 5px 4px ;
+    opacity: 15%;
+}

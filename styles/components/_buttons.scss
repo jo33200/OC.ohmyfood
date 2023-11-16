@@ -1,0 +1,24 @@
+@use "../utils/colors";
+@use "../utils/mixins";
+
+button{
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: $lighgrey;
+    p{
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.new{
+    width: 80px;
+    height: 29px;
+    @include FlexRowCenter();
+    background-color: #99e2d0;
+    border-radius: 2px;
+    color: #008766;
+    font-weight: bold;
+    border: none;
+}
