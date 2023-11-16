@@ -19,12 +19,19 @@ main{
 
 .title{
     @include FlexColumnCenter();
-    gap: 20px;
+    gap: 15px;
+    height: 240px;
+
     h1{
         text-align: center;
+        margin: 0px;
     }
     h2{
         text-align: center;
+        margin: 0px;
+    }
+    button{
+        margin-top: 20px;
     }
 }
 .fonctionnement{
