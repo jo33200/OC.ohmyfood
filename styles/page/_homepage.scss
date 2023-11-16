@@ -10,6 +10,11 @@ main{
     background-color: #eaeaea;
     @include FlexRowCenter();
     gap: 20px;
+    margin-top: 3px;
+
+    p{
+        font-weight: 500
+    }
     }
 
 .title{
@@ -28,6 +33,13 @@ main{
 
     ul{
         list-style-type: none;
+    }
+    li{
+        @include FlexRowCenter;
+    }
+    a{
+        @include FlexRowCenter;
+
     }
 }
 .restaurants{
