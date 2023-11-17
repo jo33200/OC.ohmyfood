@@ -1,9 +1,9 @@
-main{
-    width: 100%;
-    @include FlexColumnCenter();
-    gap: 30px;
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../utils/colors";
 
-}
+
+
 
 .geoloc {
     width: 100%;
@@ -39,13 +39,30 @@ main{
     background-color: white;
 
     ul{
-        list-style-type: none;
+        @include FlexColumnCenter;
+        gap: 20px;
+        position: relative
     }
     li{
         @include FlexRowCenter;
+        gap: 20px;
+        border-radius: 25px;
+        @include box-shadow;
+        width: 322px;
+        height: 72px;
+        
+        .number{
+            position: fixed;
+            left: 10px;
+        }
+        
     }
     a{
         @include FlexRowCenter;
+        gap: 20px;
+        border-radius: 25px;
+        width: 322px;
+        height: 72px;
 
     }
 }
