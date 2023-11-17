@@ -8,3 +8,9 @@ header{
     @include FlexRowCenter;
     @include header-shadow;
 }
+
+.secondheader{
+    @include FlexRowStart;
+    gap: 50px;
+    padding-left: 50px;
+}

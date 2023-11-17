@@ -43,3 +43,9 @@
     justify-content: space-between;
     align-items: center;
 }
+@mixin FlexRowStart{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

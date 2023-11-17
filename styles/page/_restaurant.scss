@@ -1,0 +1,25 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../utils/colors";
+
+
+body{
+    position: relative;
+}
+.main-picture{
+    width: 100%;
+    height: 275px;
+   
+    img{
+        object-fit:cover; 
+        width: 375px;
+        height: 275px;
+    }
+}
+.menu{
+    background-color: $backcolor;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    width: 100%;
+    margin-top: -50px;
+}
