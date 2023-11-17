@@ -20,7 +20,7 @@
 .title{
     @include FlexColumnCenter();
     gap: 15px;
-    height: 240px;
+    height: 260px;
 
     h1{
         text-align: center;
@@ -40,20 +40,21 @@
 
     ul{
         @include FlexColumnCenter;
-        gap: 20px;
-        position: relative
+        gap: 20px; 
     }
     li{
         @include FlexRowCenter;
         gap: 20px;
         border-radius: 25px;
-        @include box-shadow;
+        @include card-shadow;
         width: 322px;
         height: 72px;
+        position: relative;
+        background-color: $backcolor;
         
         .number{
-            position: fixed;
-            left: 10px;
+            position: absolute;
+            left: -12px;
         }
         
     }
@@ -64,6 +65,9 @@
         width: 322px;
         height: 72px;
 
+        p{
+            font-weight: 500;
+        }
     }
 }
 .restaurants{
