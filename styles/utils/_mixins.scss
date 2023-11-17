@@ -49,3 +49,16 @@
     justify-content: flex-start;
     align-items: center;
 }
+@mixin FlexRowAround{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin FlexRowEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
