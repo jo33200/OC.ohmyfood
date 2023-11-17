@@ -11,10 +11,13 @@
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 @mixin but-shadow{
-    box-shadow: 0px, 4px, 10px, 0px $lightgrey;
+    box-shadow: 0px, 6px, 5px, 0px rgba(0, 0, 0, 0.5);
 }
 @mixin card-shadow{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+@mixin valid-shadow{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 @mixin FlexRowCenter{
     display: flex;
@@ -26,5 +29,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+@mixin FlexColumnStart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@mixin FlexRowBetween{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }

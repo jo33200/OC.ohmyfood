@@ -21,7 +21,7 @@
     @include FlexColumnCenter();
     gap: 15px;
     height: 260px;
-
+    
     h1{
         text-align: center;
         margin: 0px;
@@ -37,6 +37,14 @@
 .fonctionnement{
     width: 100%;
     background-color: white;
+    width: 375px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+    h1{
+        padding-left: 20px;
+        
+    }
 
     ul{
         @include FlexColumnCenter;
@@ -72,8 +80,13 @@
 }
 .restaurants{
     width: 100%;
-    @include FlexColumnCenter();
+    padding-top: 50px;
+    padding-bottom: 50px;
     
+    h1{
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
 
     ul{
         padding: 0px;
@@ -88,6 +101,10 @@
         border-radius: 20px;
         background-color: white;
         display: contents;
+        }
+        a{
+            background-color: white;
+            border-radius: 20px;            ;
         }
     }
 }
@@ -111,14 +128,21 @@
     
 }
 .under-picture{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include FlexRowBetween();
+    padding: 0px 16px;
 
     img{
         width: 22px;
         height: 21px;
         
     }
+    .titles{
+        @include FlexColumnStart;
+        gap: 5px;
+        margin: 15px 0px
+
+       
+
+    }
+    
 }
