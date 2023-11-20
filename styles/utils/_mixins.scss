@@ -37,6 +37,12 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+@mixin FlexColumnEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 @mixin FlexRowBetween{
     display: flex;
     flex-direction: row;

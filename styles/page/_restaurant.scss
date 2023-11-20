@@ -2,9 +2,28 @@
 @import "../utils/variables";
 @import "../utils/colors";
 
+@import "../base/header";
+@import "../base/general";
+@import "../base/footer";
 
-body{
-    position: relative;
+
+h1{
+        
+    font-family: 'Shrikhand', serif;
+}
+h2{
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+}
+h3{
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    margin-left: 0px;
+}
+.price{
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    margin: 0px;
 }
 
 .main-picture{
@@ -38,28 +57,55 @@ body{
     }
 }
 
-.entrees{
+.entrees-plats-desserts{
     @include FlexColumnStart;
     gap: 5px;
 
     ul{
         width: 100%;
+        height: auto;
         @include FlexColumnStart;
         gap: 10px;
+        margin-bottom: 50px;
     
         li{
-            @include FlexRowEnd;
-            width: 330px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 0px;
+            width: 340px;
             height: 69px;
-            margin-right: 30px;
-            
             @include box-shadow;
-            border-radius: 20px;
+            border-radius: 16px;
+            
+            
             
 
-            p{
-                margin: 0px;
+            div{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 8px;
+                margin:0px 0px 10px 10px ;
+                
+                p{
+                    margin: 0px;
+                }
             }
+            
+            .price{
+                margin: 10px;
+            }
+            
+            
+
         }
     }
+}
+.button{
+    @include but-shadow;
+    text-align: center;
 }
