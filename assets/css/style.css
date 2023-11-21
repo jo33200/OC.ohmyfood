@@ -188,11 +188,11 @@ ul {
 }
 .title h1 {
   text-align: center;
-  margin: 0px;
+  margin: 0px 50px 0px 50px;
 }
 .title p {
   text-align: center;
-  margin: 0px;
+  margin: 0px 50px 0px 50px;
 }
 .title button {
   margin-top: 20px;
