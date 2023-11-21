@@ -137,6 +137,8 @@ ul {
 
 .secondfooter {
   background-color: #353535;
+  position: relative;
+  bottom: 0;
   color: white;
   height: 186px;
   width: 100%;
@@ -144,6 +146,7 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 0px 10px 0px;
+  margin-top: 50px;
 }
 .secondfooter h2 {
   font-weight: 300;
@@ -159,12 +162,6 @@ ul {
 .secondfooter p {
   color: white;
   font-weight: 300;
-}
-.secondfooter .bold {
-  font-weight: 400;
-}
-.secondfooter .footlogo {
-  padding: 0px 20px;
 }
 
 .geoloc {
@@ -419,6 +416,8 @@ ul {
 
 .secondfooter {
   background-color: #353535;
+  position: relative;
+  bottom: 0;
   color: white;
   height: 186px;
   width: 100%;
@@ -426,6 +425,7 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 0px 10px 0px;
+  margin-top: 50px;
 }
 .secondfooter h2 {
   font-weight: 300;
@@ -442,12 +442,6 @@ ul {
   color: white;
   font-weight: 300;
 }
-.secondfooter .bold {
-  font-weight: 400;
-}
-.secondfooter .footlogo {
-  padding: 0px 20px;
-}
 
 .price {
   font-family: "roboto", sans-serif;
@@ -462,7 +456,7 @@ body {
 main {
   position: relative;
   width: 100%;
-  height: 1400px;
+  height: auto;
 }
 
 .main-picture {
@@ -478,9 +472,10 @@ main {
 .menu {
   background-color: #f6f6f6;
   border-radius: 20px 20px 0px 0px;
-  position: absolute;
+  position: relative;
   width: 375px;
   margin-top: -50px;
+  padding-top: 10px;
 }
 
 .title-restaurant {

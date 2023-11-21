@@ -39,6 +39,8 @@
 .secondfooter{
     
         background-color: $nightrider;
+        position: relative;
+        bottom: 0;
         color: white;
         height: 186px;
         width: 100%;
@@ -46,6 +48,7 @@
         flex-direction: column;
         justify-content: flex-start;
         padding: 20px 0px 10px 0px;
+        margin-top: 50px;
         
         h2{
             font-weight: 300;
@@ -62,11 +65,4 @@
             color: white;
             font-weight: 300;
         }
-    
-    .bold{
-        font-weight: 400;
-    }
-    .footlogo{
-        padding: 0px 20px;
-    }
 }
