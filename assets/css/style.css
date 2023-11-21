@@ -16,6 +16,7 @@ button {
   border-radius: 25px;
   font-family: "roboto", sans-serif;
   font-weight: 500;
+  font-size: 16px;
   color: white;
   background: linear-gradient(180deg, #ff79da, #9356DC);
   border: none;
@@ -88,10 +89,6 @@ h3 {
 body {
   margin: 0px;
   background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 a {
@@ -103,7 +100,7 @@ ul {
   padding: 0px;
 }
 
-footer {
+.firstfooter {
   background-color: #353535;
   color: white;
   height: 186px;
@@ -112,19 +109,20 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 0px 10px 0px;
+  margin-top: 800px;
 }
-footer h2 {
+.firstfooter h2 {
   font-weight: 300;
 }
-footer ul {
+.firstfooter ul {
   line-height: 5%;
   padding-left: 20px;
 }
-footer li {
+.firstfooter li {
   display: flex;
   gap: 10px;
 }
-footer p {
+.firstfooter p {
   color: white;
   font-weight: 300;
 }
@@ -134,6 +132,38 @@ footer p {
 }
 
 .footlogo {
+  padding: 0px 20px;
+}
+
+.secondfooter {
+  background-color: #353535;
+  color: white;
+  height: 186px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 0px 10px 0px;
+}
+.secondfooter h2 {
+  font-weight: 300;
+}
+.secondfooter ul {
+  line-height: 5%;
+  padding-left: 20px;
+}
+.secondfooter li {
+  display: flex;
+  gap: 10px;
+}
+.secondfooter p {
+  color: white;
+  font-weight: 300;
+}
+.secondfooter .bold {
+  font-weight: 400;
+}
+.secondfooter .footlogo {
   padding: 0px 20px;
 }
 
@@ -163,7 +193,7 @@ footer p {
   text-align: center;
   margin: 0px;
 }
-.title h2 {
+.title p {
   text-align: center;
   margin: 0px;
 }
@@ -341,10 +371,6 @@ h3 {
 body {
   margin: 0px;
   background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 a {
@@ -356,7 +382,7 @@ ul {
   padding: 0px;
 }
 
-footer {
+.firstfooter {
   background-color: #353535;
   color: white;
   height: 186px;
@@ -365,19 +391,20 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px 0px 10px 0px;
+  margin-top: 800px;
 }
-footer h2 {
+.firstfooter h2 {
   font-weight: 300;
 }
-footer ul {
+.firstfooter ul {
   line-height: 5%;
   padding-left: 20px;
 }
-footer li {
+.firstfooter li {
   display: flex;
   gap: 10px;
 }
-footer p {
+.firstfooter p {
   color: white;
   font-weight: 300;
 }
@@ -390,19 +417,36 @@ footer p {
   padding: 0px 20px;
 }
 
-h1 {
-  font-family: "Shrikhand", serif;
+.secondfooter {
+  background-color: #353535;
+  color: white;
+  height: 186px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 0px 10px 0px;
 }
-
-h2 {
-  font-family: "roboto", sans-serif;
+.secondfooter h2 {
   font-weight: 300;
 }
-
-h3 {
-  font-family: "roboto", sans-serif;
-  font-weight: 500;
-  margin-left: 0px;
+.secondfooter ul {
+  line-height: 5%;
+  padding-left: 20px;
+}
+.secondfooter li {
+  display: flex;
+  gap: 10px;
+}
+.secondfooter p {
+  color: white;
+  font-weight: 300;
+}
+.secondfooter .bold {
+  font-weight: 400;
+}
+.secondfooter .footlogo {
+  padding: 0px 20px;
 }
 
 .price {
@@ -435,20 +479,21 @@ main {
   background-color: #f6f6f6;
   border-radius: 20px 20px 0px 0px;
   position: absolute;
-  width: 100%;
+  width: 375px;
   margin-top: -50px;
-  padding-left: 10px;
 }
 
-.title {
+.title-restaurant {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 320px;
   height: 30px;
   margin: 20px 40px 20px 0px;
+  padding-left: 17px;
 }
-.title h1 {
+.title-restaurant h1 {
   font-family: "Shrikhand", serif;
 }
 
@@ -458,6 +503,7 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 5px;
+  padding-left: 17px;
 }
 .entrees-plats-desserts ul {
   width: 100%;
@@ -498,11 +544,6 @@ main {
 .button {
   box-shadow: 0px, 6px, 5px, 0px rgba(0, 0, 0, 0.5);
   text-align: center;
-}
-
-footer {
-  position: relative;
-  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

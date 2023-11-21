@@ -34,8 +34,8 @@ h3{
 body{
     margin: 0px;
     background-color: $backcolor;
-    @include FlexColumnCenter();
 }
+
 a{
     text-decoration: none;
 }
@@ -43,5 +43,3 @@ ul{
     list-style-type: none;
     padding: 0px;
 }
-
-

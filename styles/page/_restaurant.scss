@@ -7,19 +7,7 @@
 @import "../base/footer";
 
 
-h1{
-        
-    font-family: 'Shrikhand', serif;
-}
-h2{
-    font-family: 'roboto', sans-serif;
-    font-weight: 300;
-}
-h3{
-    font-family: 'roboto', sans-serif;
-    font-weight: 500;
-    margin-left: 0px;
-}
+
 .price{
     font-family: 'roboto', sans-serif;
     font-weight: 500;
@@ -48,15 +36,16 @@ main{
     background-color: $backcolor;
     border-radius: 20px 20px 0px 0px;
     position: absolute;
-    width: 100%;
+    width: 375px;
     margin-top: -50px;
-    padding-left: 10px;
 }
 
-.title{
+.title-restaurant{
     @include FlexRowBetween;
+    width: 320px;
     height: 30px;
     margin: 20px 40px 20px 0px;
+    padding-left: 17px;
     
     h1{
         
@@ -67,6 +56,7 @@ main{
 .entrees-plats-desserts{
     @include FlexColumnStart;
     gap: 5px;
+    padding-left: 17px;
 
     ul{
         width: 100%;
@@ -85,9 +75,6 @@ main{
             height: 69px;
             @include box-shadow;
             border-radius: 16px;
-            
-            
-            
 
             div{
                 
@@ -107,16 +94,10 @@ main{
                 margin: 10px;
             }
             
-            
-
         }
     }
 }
 .button{
     @include but-shadow;
     text-align: center;
-}
-footer{
-    position: relative;
-    margin-bottom: 0px;
 }
