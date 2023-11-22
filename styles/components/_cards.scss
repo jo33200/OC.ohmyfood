@@ -1,0 +1,76 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../utils/colors";
+
+
+.cards{
+    width: 100%;
+    height: 100%;
+    @include FlexColumnCenter();
+    border-radius: 20px;
+    background-color: white;
+    display: contents;
+    
+    @media screen and (min-width: $breakpoint) {
+        width: 30%;
+        height: 251px;
+        
+    }
+    }
+/*
+.heart{
+        & .empty{
+            z-index: 3;
+            opacity: 1;
+            font-size: 24px;
+            &:hover{
+                opacity: 0;
+                transition: 200ms;
+            }
+        }
+        & .full{
+            z-index: 2;
+            background: linear-gradient(#9356dc, #ff79da);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-size: 24px;
+            }
+        }
+*/
+.picture-restaurant{
+    width: 100%;
+    position: relative;
+            
+        
+    img{
+        width: 100%;
+        height: 231px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+                
+    .new{
+        position: absolute;
+        top: 1%;
+        left: 70%;
+    }
+            
+}
+
+.under-picture{
+    @include FlexRowBetween();
+    padding: 0px 16px;
+        
+    img{
+        width: 22px;
+        height: 21px;
+                
+        }
+ }       
+.titles{
+    @include FlexColumnStart;
+        gap: 5px;
+        margin: 15px 0px
+}
+            
