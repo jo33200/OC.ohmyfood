@@ -33,9 +33,14 @@ h3{
 }
 body{
     margin: 0px;
-    background-color: $backcolor;
 }
 
+main{
+    width: 100%;
+    height: auto;
+    @include FlexColumnCenter;
+    background-color: white;
+}
 a{
     text-decoration: none;
 }

@@ -4,7 +4,6 @@
 
 
 
-
 .geoloc {
     width: 100%;
     background-color: #eaeaea;
@@ -21,6 +20,8 @@
     @include FlexColumnCenter();
     gap: 15px;
     height: 260px;
+    width: 100%;
+    background-color: $backcolor;
     
     @media screen and (min-width: $breakpoint) {
         
@@ -43,6 +44,19 @@
     button{
         margin-top: 20px;
     }
+}
+
+.container{
+    @include FlexColumnStart;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 80%;
+
+    @media screen and (min-width: $breakpoint) {
+       width: 70%;
+       
+    }
+
 }
 
 .fonctionnement{
@@ -86,37 +100,26 @@
 
 }
    
-.container{
-     @include FlexColumnStart;
-     gap: 20px;
-     box-sizing: border-box;
-     width: 80%;
 
-     @media screen and (min-width: $breakpoint) {
-        width: 70%;
-        
-     }
-
-}
 .restaurants{
     width: 100%;;
     padding-top: 50px;
     padding-bottom: 50px;
     @include FlexColumnCenter;
+    background-color: $backcolor;
     
     ul{
+        width: 100%;
         padding: 0px;
         margin: 0px;
-        @include FlexRowStart;
+        @include FlexRowCenter;
         flex-wrap: wrap;
         gap: 20px;
-
+        
         @media screen and (min-width: $breakpoint) {
-            @include FlexRowStart;
+            @include FlexRowBetween;
             flex-wrap: wrap;
-            gap: 50px;
-
-            
+            gap: 50px;   
         }
          
         a{
