@@ -2,15 +2,37 @@
 @import "../utils/variables";
 @import "../utils/colors";
 
-header{
+.firstheader{
     width: 100%;
     height: 63px;
     @include FlexRowCenter;
     @include header-shadow;
+    
 }
 
 .secondheader{
-    @include FlexRowStart;
-    gap: 50px;
-    padding-left: 20px;
+    @include FlexRowBetween;
+    width: 100%;
+    height: 63px;
+
+    @media screen and (min-width: $breakpoint) {
+        height: 94px;
+        
+    }
+
+    picture{
+        width: 60px;
+        height: 34px;
+        margin-right: 55%;
+
+        @media screen and (min-width: $breakpoint) {
+            margin-right: 50%;
+            
+        }
+    }
+    a{
+        width: 20px;
+        height: 20px;
+        margin-left: 2%;
+    }
 }
