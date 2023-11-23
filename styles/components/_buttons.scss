@@ -12,7 +12,13 @@ button{
     color: white;
     background: linear-gradient(180deg, $degrade, $blue);
     border: none;
-    @include valid-shadow;
+    @include explore-shadow;
+
+    &:hover{
+        opacity: 0.9;
+        transition: 200ms;
+        @include valid-shadow;
+    }
         
     
 }
