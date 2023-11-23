@@ -168,7 +168,7 @@ h1 {
 
 h2 {
   font-family: "roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 18px;
   color: #000;
   margin: 0px;
@@ -176,7 +176,7 @@ h2 {
 
 h3 {
   font-family: "roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   color: #000;
   margin: 0px;
@@ -268,12 +268,31 @@ ul {
   padding: 20px 0px 10px 0px;
   margin-top: 50px;
 }
+@media screen and (min-width: 1000px) {
+  .secondfooter {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 50px;
+    height: 120px;
+  }
+}
 .secondfooter h2 {
   font-weight: 300;
 }
 .secondfooter ul {
   line-height: 5%;
   padding-left: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .secondfooter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
 }
 .secondfooter li {
   display: flex;
@@ -486,7 +505,7 @@ h1 {
 
 h2 {
   font-family: "roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 18px;
   color: #000;
   margin: 0px;
@@ -494,7 +513,7 @@ h2 {
 
 h3 {
   font-family: "roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   color: #000;
   margin: 0px;
@@ -586,12 +605,31 @@ ul {
   padding: 20px 0px 10px 0px;
   margin-top: 50px;
 }
+@media screen and (min-width: 1000px) {
+  .secondfooter {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 50px;
+    height: 120px;
+  }
+}
 .secondfooter h2 {
   font-weight: 300;
 }
 .secondfooter ul {
   line-height: 5%;
   padding-left: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .secondfooter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
 }
 .secondfooter li {
   display: flex;
@@ -620,6 +658,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .main-picture {
@@ -660,8 +699,19 @@ main {
   margin: 20px 40px 20px 0px;
   padding-left: 17px;
 }
+@media screen and (min-width: 1000px) {
+  .title-restaurant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+}
 .title-restaurant h1 {
   font-family: "Shrikhand", serif;
+  font-size: 28px;
 }
 
 .entrees-plats-desserts {
@@ -671,6 +721,11 @@ main {
   align-items: flex-start;
   gap: 5px;
   padding-left: 14px;
+}
+@media screen and (min-width: 1000px) {
+  .entrees-plats-desserts {
+    width: 80%;
+  }
 }
 .entrees-plats-desserts ul {
   width: 100%;
@@ -683,6 +738,7 @@ main {
   margin-bottom: 50px;
 }
 .entrees-plats-desserts ul li {
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -692,6 +748,11 @@ main {
   height: 69px;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
   border-radius: 16px;
+}
+@media screen and (min-width: 1000px) {
+  .entrees-plats-desserts ul li {
+    width: 100%;
+  }
 }
 .entrees-plats-desserts ul li div {
   display: flex;
