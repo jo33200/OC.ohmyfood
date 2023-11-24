@@ -121,15 +121,5 @@
             flex-wrap: wrap;
             gap: 50px;   
         }
-         
-        a{
-            background-color: white;
-            border-radius: 20px;
-            
-            @media screen and (min-width: $breakpoint) {
-                width: 45%;
-                
-            }
-        }
     }
 }

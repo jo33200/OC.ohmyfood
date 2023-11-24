@@ -59,6 +59,16 @@ button:hover {
     height: 251px;
   }
 }
+.cards a {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .cards a {
+    width: 45%;
+  }
+}
 
 .picture-restaurant {
   width: 100%;
@@ -111,7 +121,7 @@ button:hover {
 .heart .empty:hover {
   z-index: 3;
   opacity: 0;
-  transition: 200ms;
+  transform: 600ms;
 }
 .heart .full {
   position: absolute;
@@ -121,11 +131,11 @@ button:hover {
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 24px;
+  transition: 600ms;
 }
 .heart .full:hover {
   z-index: 2;
   opacity: 1;
-  transition: 200ms;
 }
 
 .firstheader {
@@ -465,15 +475,6 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-  }
-}
-.restaurants ul a {
-  background-color: white;
-  border-radius: 20px;
-}
-@media screen and (min-width: 1000px) {
-  .restaurants ul a {
-    width: 45%;
   }
 }
 

@@ -16,7 +16,18 @@
         height: 251px;
         
     }
+    a{
+        background-color: white;
+        border-radius: 20px;
+        width: 100%;
+        
+        @media screen and (min-width: $breakpoint) {
+            width: 45%;
+            
+        }
     }
+}
+
 
 
 
@@ -69,7 +80,7 @@
             &:hover{
                 z-index: 3;
                 opacity: 0;
-                transition: 200ms;
+                transform: 600ms;
             }
         }
         & .full{
@@ -80,11 +91,11 @@
             background-clip: text;
             -webkit-background-clip: text;
             font-size: 24px;
+            transition: 600ms;
             &:hover{
                 z-index: 2;
-                opacity: 1;
-                transition: 200ms;
+                opacity: 1;   
             }
-            }
+        }
     }
    
