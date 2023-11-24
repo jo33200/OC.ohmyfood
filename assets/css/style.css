@@ -60,27 +60,6 @@ button:hover {
   }
 }
 
-/*
-.heart{
-        & .empty{
-            z-index: 3;
-            opacity: 1;
-            font-size: 24px;
-            &:hover{
-                opacity: 0;
-                transition: 200ms;
-            }
-        }
-        & .full{
-            z-index: 2;
-            background: linear-gradient(#9356dc, #ff79da);
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            font-size: 24px;
-            }
-        }
-*/
 .picture-restaurant {
   width: 100%;
   position: relative;
@@ -116,6 +95,37 @@ button:hover {
   align-items: flex-start;
   gap: 5px;
   margin: 15px 0px;
+}
+
+.heart {
+  width: 21px;
+  height: 20px;
+  position: relative;
+}
+.heart .empty {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  font-size: 24px;
+}
+.heart .empty:hover {
+  z-index: 3;
+  opacity: 0;
+  transition: 200ms;
+}
+.heart .full {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 24px;
+}
+.heart .full:hover {
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms;
 }
 
 .firstheader {
