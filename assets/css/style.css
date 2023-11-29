@@ -10,6 +10,7 @@
     opacity: 1;
   }
 }
+/********* LOADER **********/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -30,6 +31,53 @@
     z-index: -1;
   }
 }
+/********* CHOICE **********/
+@keyframes anim-choice {
+  0% {
+    transform: translateX(-500px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.anim1 {
+  animation: anim-choice 1s;
+}
+
+.anim2 {
+  animation: anim-choice 1.5s;
+}
+
+.anim3 {
+  animation: anim-choice 2s;
+}
+
+.anim4 {
+  animation: anim-choice 2.5s;
+}
+
+.anim5 {
+  animation: anim-choice 3s;
+}
+
+.anim6 {
+  animation: anim-choice 3.5s;
+}
+
+.anim7 {
+  animation: anim-choice 4s;
+}
+
+.anim8 {
+  animation: anim-choice 4.5s;
+}
+
+.anim9 {
+  animation: anim-choice 5s;
+}
+
 button {
   width: 218px;
   height: 50px;
@@ -228,6 +276,7 @@ button:hover {
     opacity: 1;
   }
 }
+/********* LOADER **********/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -248,30 +297,78 @@ button:hover {
     z-index: -1;
   }
 }
+/********* CHOICE **********/
+@keyframes anim-choice {
+  0% {
+    transform: translateX(-500px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.anim1 {
+  animation: anim-choice 1s;
+}
+
+.anim2 {
+  animation: anim-choice 1.5s;
+}
+
+.anim3 {
+  animation: anim-choice 2s;
+}
+
+.anim4 {
+  animation: anim-choice 2.5s;
+}
+
+.anim5 {
+  animation: anim-choice 3s;
+}
+
+.anim6 {
+  animation: anim-choice 3.5s;
+}
+
+.anim7 {
+  animation: anim-choice 4s;
+}
+
+.anim8 {
+  animation: anim-choice 4.5s;
+}
+
+.anim9 {
+  animation: anim-choice 5s;
+}
+
 .loader-container {
   position: fixed;
   z-index: 9999;
-  top: 0;
-  left: 0;
+  top: 10%;
+  left: 25%;
   scroll-behavior: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 400px;
-  background: #333;
+  height: 170px;
+  width: 170px;
+  background: #ff79da;
+  border-radius: 50%;
   animation: fadeOut 1.5s linear forwards;
 }
 
 .loader {
   display: block;
   position: relative;
-  height: 50px;
-  width: 50px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   border: 4px solid transparent;
-  border-top-color: crimson;
-  animation: spin 6s linear infinite;
+  border-top-color: #003A68;
+  animation: spin 1.5s linear infinite;
 }
 .loader::before, .loader::after {
   content: "";
@@ -284,16 +381,16 @@ button:hover {
   left: 8px;
   right: 8px;
   bottom: 8px;
-  border-top-color: #008766;
-  animation: spin 3s linear infinite;
+  border-top-color: #9356DC;
+  animation: spin 0.5s linear infinite;
 }
 .loader::after {
   top: 24px;
   left: 24px;
   right: 24px;
   bottom: 24px;
-  border-top-color: #99e2d0;
-  animation: spin 1.5s linear infinite;
+  border-top-color: #89C8FA;
+  animation: spin 1s linear infinite;
 }
 
 .firstheader {
@@ -634,6 +731,84 @@ ul {
     flex-wrap: wrap;
     gap: 50px;
   }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/********* LOADER **********/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+/********* CHOICE **********/
+@keyframes anim-choice {
+  0% {
+    transform: translateX(-500px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.anim1 {
+  animation: anim-choice 1s;
+}
+
+.anim2 {
+  animation: anim-choice 1.5s;
+}
+
+.anim3 {
+  animation: anim-choice 2s;
+}
+
+.anim4 {
+  animation: anim-choice 2.5s;
+}
+
+.anim5 {
+  animation: anim-choice 3s;
+}
+
+.anim6 {
+  animation: anim-choice 3.5s;
+}
+
+.anim7 {
+  animation: anim-choice 4s;
+}
+
+.anim8 {
+  animation: anim-choice 4.5s;
+}
+
+.anim9 {
+  animation: anim-choice 5s;
 }
 
 .firstheader {

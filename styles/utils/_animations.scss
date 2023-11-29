@@ -14,6 +14,13 @@
     }
 }
 
+
+
+
+/********* LOADER **********/
+
+
+
 @keyframes spin{
     0%{
         transform: rotate(0deg);
@@ -37,3 +44,52 @@
         z-index: -1;
     }
 }
+
+
+
+
+/********* CHOICE **********/
+
+
+
+@keyframes anim-choice {
+    0% {
+        transform: translateX(-500px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.anim1{
+    animation: anim-choice 1s ;
+   }
+   .anim2{
+    animation: anim-choice 1.5s ;
+   }
+   .anim3{
+    animation: anim-choice 2s ;
+   }
+   .anim4{
+    animation: anim-choice 2.5s ;
+   }
+   .anim5{
+    animation: anim-choice 3s ;
+   }
+   .anim6{
+    animation: anim-choice 3.5s ;
+   }
+   .anim7{
+    animation: anim-choice 4s ;
+   }
+   .anim8{
+    animation: anim-choice 4.5s ;
+   }
+   .anim9{
+    animation: anim-choice 5s ;
+   }
+
+
+   

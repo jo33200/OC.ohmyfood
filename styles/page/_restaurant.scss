@@ -1,6 +1,7 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 @import "../utils/colors";
+@import "../utils/animations";
 
 @import "../base/header";
 @import "../base/general";
@@ -121,3 +122,6 @@ main{
     text-align: center;
     margin-bottom: 50px;
 }
+
+    
+   
