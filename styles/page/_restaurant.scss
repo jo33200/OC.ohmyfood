@@ -93,22 +93,7 @@ main{
         gap: 10px;
         margin-bottom: 50px;
     
-        li{
-            background-color: white;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-end;
-            gap: 0px;
-            width: 350px;
-            height: 69px;
-            @include box-shadow;
-            border-radius: 16px;
-
-            @media screen and (min-width: $breakpoint) {
-                width: 100%;
-                
-            }
+        
 
             div{
                 
@@ -130,7 +115,7 @@ main{
             
         }
     }
-}
+
 .button{
     @include but-shadow;
     text-align: center;
