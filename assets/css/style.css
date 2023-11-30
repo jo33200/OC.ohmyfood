@@ -273,9 +273,9 @@ button:hover {
 }
 .validation i {
   position: absolute;
-  font-size: 100px;
-  left: 20px;
-  top: -20px;
+  font-size: 20px;
+  left: 7px;
+  top: 7px;
   color: #99e2d0;
 }
 
@@ -497,7 +497,9 @@ h3 {
 }
 
 body {
-  margin: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 main {
@@ -935,7 +937,9 @@ h3 {
 }
 
 body {
-  margin: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 main {
