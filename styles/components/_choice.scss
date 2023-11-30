@@ -2,6 +2,8 @@
 @import "../utils/mixins";
 @import "../utils/colors";
 
+
+
 .choice{
     background-color: white;
     display: flex;
@@ -10,56 +12,37 @@
     align-items: flex-end;
     gap: 0px;
     width: 350px;
-    height: 69px;
+    height: 70px;
     @include box-shadow;
     border-radius: 16px;
     position: relative;
-    z-index: 3;
     box-sizing: border-box;
 
-    .validation{
-        position: absolute;
-        height: 100%;
-        width: 59px;
-        right: 0;
-        top: 0px;
-        z-index: 2;
-        @include FlexRowCenter;
-        background: $cyan;
-        border-radius: 0px 16px 16px 0px;
-        
-        &:valid{
-            &::after{
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: $green;
-                border-radius: 0px 16px 16px 0px;
-            }
-            translate: 100%;
-        }
-        &:hover{
-            cursor: pointer;
-        }
-        
-        .fa-circle-check{
-            position: absolute;
-            font-size: 20px;
-            z-index: 1;
-            background-color:white;
-            width: 25px;
-            height: 25px;
-            right: 15px;
-            color: $cyan;
-            border-radius: 50%;
-        }
+    &:hover{
+        cursor: pointer;
+        transition: 200ms;
+        animation-delay: 200ms;
     }
-        
     
-
     @media screen and (min-width: $breakpoint) {
         width: 100%;
         
+    }
+}
+
+.validation{
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    right: -60px;
+    top: 0px;
+    background: $cyan;
+    border-radius: 0px 16px 16px 0px;
+    
+    .circle{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: white;
     }
 }

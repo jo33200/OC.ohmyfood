@@ -51,7 +51,24 @@
 /********* CHOICE **********/
 
 
+@keyframes anim-scale { 
+    0% {
+        transform: scaleX(1);
+        
+    }
+    100% {
+        transform: scaleX(-59px);
+    }
+     }
 
+     @keyframes anim-validation { 
+        0% {
+            transform: translateX(0px);
+        }
+        100% {
+            transform: translateX(-59px);
+        }
+         }
 @keyframes anim-choice {
     0% {
         transform: translateX(-500px);
@@ -65,31 +82,33 @@
 }
 .anim1{
     animation: anim-choice 1s ;
-   }
-   .anim2{
+}
+.anim2{
     animation: anim-choice 1.5s ;
-   }
-   .anim3{
+}
+.anim3{
     animation: anim-choice 2s ;
-   }
-   .anim4{
+}
+.anim4{
     animation: anim-choice 2.5s ;
-   }
-   .anim5{
+}
+.anim5{
     animation: anim-choice 3s ;
-   }
-   .anim6{
+}
+.anim6{
     animation: anim-choice 3.5s ;
-   }
-   .anim7{
+}
+.anim7{
     animation: anim-choice 4s ;
-   }
-   .anim8{
+}
+.anim8{
     animation: anim-choice 4.5s ;
-   }
-   .anim9{
+}
+.anim9{
     animation: anim-choice 5s ;
-   }
+}
 
+.validation{
+    animation: anim-click 1s ;
+}
 
-   
