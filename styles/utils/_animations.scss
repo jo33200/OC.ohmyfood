@@ -48,7 +48,49 @@
 
 
 
+/********* HEART **********/
+
+
+.heart{
+    width: 21px;
+    height: 20px;
+    position: relative;
+    
+        & .empty{
+            position: absolute;
+            z-index: 2;
+            opacity: 1;
+            font-size: 24px;
+            color: black;
+            &:hover{
+                z-index: 3;
+                opacity: 0;
+                transform: 600ms;
+            }
+        }
+        & .full{
+            position: absolute;
+            z-index: 3;
+            opacity: 0;
+            background: linear-gradient(#9356dc, #ff79da);
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-size: 24px;
+            transition: 600ms;
+            &:hover{
+                z-index: 2;
+                opacity: 1;   
+            }
+        }
+    }
+
+
+
+
 /********* CHOICE **********/
+
+
+
 
 
 @keyframes anim-scale { 

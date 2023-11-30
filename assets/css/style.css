@@ -31,6 +31,39 @@
     z-index: -1;
   }
 }
+/********* HEART **********/
+.heart {
+  width: 21px;
+  height: 20px;
+  position: relative;
+}
+.heart .empty {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  font-size: 24px;
+  color: black;
+}
+.heart .empty:hover {
+  z-index: 3;
+  opacity: 0;
+  transform: 600ms;
+}
+.heart .full {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 24px;
+  transition: 600ms;
+}
+.heart .full:hover {
+  z-index: 2;
+  opacity: 1;
+}
+
 /********* CHOICE **********/
 @keyframes anim-scale {
   0% {
@@ -224,37 +257,6 @@ button:hover {
   margin: 15px 0px;
 }
 
-.heart {
-  width: 21px;
-  height: 20px;
-  position: relative;
-}
-.heart .empty {
-  position: absolute;
-  z-index: 2;
-  opacity: 1;
-  font-size: 24px;
-}
-.heart .empty:hover {
-  z-index: 3;
-  opacity: 0;
-  transform: 600ms;
-}
-.heart .full {
-  position: absolute;
-  z-index: 3;
-  opacity: 0;
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 24px;
-  transition: 600ms;
-}
-.heart .full:hover {
-  z-index: 2;
-  opacity: 1;
-}
-
 .choice {
   background-color: white;
   display: flex;
@@ -342,6 +344,39 @@ button:hover {
     z-index: -1;
   }
 }
+/********* HEART **********/
+.heart {
+  width: 21px;
+  height: 20px;
+  position: relative;
+}
+.heart .empty {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  font-size: 24px;
+  color: black;
+}
+.heart .empty:hover {
+  z-index: 3;
+  opacity: 0;
+  transform: 600ms;
+}
+.heart .full {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 24px;
+  transition: 600ms;
+}
+.heart .full:hover {
+  z-index: 2;
+  opacity: 1;
+}
+
 /********* CHOICE **********/
 @keyframes anim-scale {
   0% {
@@ -860,6 +895,39 @@ ul {
     z-index: -1;
   }
 }
+/********* HEART **********/
+.heart {
+  width: 21px;
+  height: 20px;
+  position: relative;
+}
+.heart .empty {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  font-size: 24px;
+  color: black;
+}
+.heart .empty:hover {
+  z-index: 3;
+  opacity: 0;
+  transform: 600ms;
+}
+.heart .full {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 24px;
+  transition: 600ms;
+}
+.heart .full:hover {
+  z-index: 2;
+  opacity: 1;
+}
+
 /********* CHOICE **********/
 @keyframes anim-scale {
   0% {
