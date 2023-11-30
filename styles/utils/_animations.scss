@@ -30,7 +30,7 @@
     }
 }
 
-@keyframes fadeOut {
+@keyframes disappear {
     0% {
         opacity: 1;
     }
@@ -57,7 +57,8 @@
         
     }
     100% {
-        transform: scaleX(-59px);
+        transform: scaleX(-60px);
+        
     }
      }
 
