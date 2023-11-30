@@ -20,6 +20,9 @@
 
     &:hover{
         cursor: pointer;
+    }
+    &:focus{
+        transform: translateX(-60px);
         
     }
     
@@ -40,8 +43,7 @@
 
     &:hover{
         transform: translateX(-60px);
-        transition: all 1s;
-        
+        transition: all 1s; 
     }
     
     .circle{

@@ -94,8 +94,36 @@
   animation: anim-choice 5s;
 }
 
-.validation {
-  animation: anim-click 1s;
+.anim10 {
+  animation: anim-choice 5.5s;
+}
+
+.anim11 {
+  animation: anim-choice 6s;
+}
+
+.anim12 {
+  animation: anim-choice 6.5s;
+}
+
+.anim13 {
+  animation: anim-choice 7s;
+}
+
+.anim14 {
+  animation: anim-choice 7.5s;
+}
+
+.anim15 {
+  animation: anim-choice 8s;
+}
+
+.anim16 {
+  animation: anim-choice 8.5s;
+}
+
+.anim17 {
+  animation: anim-choice 9s;
 }
 
 button {
@@ -114,6 +142,7 @@ button:hover {
   opacity: 0.9;
   transition: 200ms;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
 .new {
@@ -242,6 +271,9 @@ button:hover {
 }
 .choice:hover {
   cursor: pointer;
+}
+.choice:focus {
+  transform: translateX(-60px);
 }
 @media screen and (min-width: 1000px) {
   .choice {
@@ -373,8 +405,36 @@ button:hover {
   animation: anim-choice 5s;
 }
 
-.validation {
-  animation: anim-click 1s;
+.anim10 {
+  animation: anim-choice 5.5s;
+}
+
+.anim11 {
+  animation: anim-choice 6s;
+}
+
+.anim12 {
+  animation: anim-choice 6.5s;
+}
+
+.anim13 {
+  animation: anim-choice 7s;
+}
+
+.anim14 {
+  animation: anim-choice 7.5s;
+}
+
+.anim15 {
+  animation: anim-choice 8s;
+}
+
+.anim16 {
+  animation: anim-choice 8.5s;
+}
+
+.anim17 {
+  animation: anim-choice 9s;
 }
 
 .loader-container {
@@ -863,8 +923,36 @@ ul {
   animation: anim-choice 5s;
 }
 
-.validation {
-  animation: anim-click 1s;
+.anim10 {
+  animation: anim-choice 5.5s;
+}
+
+.anim11 {
+  animation: anim-choice 6s;
+}
+
+.anim12 {
+  animation: anim-choice 6.5s;
+}
+
+.anim13 {
+  animation: anim-choice 7s;
+}
+
+.anim14 {
+  animation: anim-choice 7.5s;
+}
+
+.anim15 {
+  animation: anim-choice 8s;
+}
+
+.anim16 {
+  animation: anim-choice 8.5s;
+}
+
+.anim17 {
+  animation: anim-choice 9s;
 }
 
 .firstheader {
