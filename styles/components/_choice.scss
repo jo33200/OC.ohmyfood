@@ -18,13 +18,22 @@
     position: relative;
     box-sizing: border-box;
 
-    &:hover{
+   
+   
+    &:hover, &:active{
         cursor: pointer;
+        content: " ";
+         border-radius: 16px 0px 0px 16px;
+         animation: anim-click 1s normal;
+         transition: all 1s;
+        width: 91%;
+        &.validation{
+            opacity: 1;
+            transform: anim-click 1s normal;
+            transition: all 1s;
+        }
     }
-    &:focus{
-        transform: translateX(-60px);
-        
-    }
+    
     
     @media screen and (min-width: $breakpoint) {
         width: 100%;
@@ -33,34 +42,111 @@
 }
 
 .validation{
-    position: absolute;
-    height: 100%;
-    width: 60px;
-    right: -60px;
-    top: 0px;
+    
+    width: 20%;
     background: $cyan;
     border-radius: 0px 16px 16px 0px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 400ms cubic-bezier(.32,0,.07,1);
 
-    &:hover{
-        transform: translateX(-60px);
-        transition: all 1s; 
-    }
-    
-    .circle{
-        height: 30px;
-        width: 30px;
-        top: 20px;
-        left: 5px;
-        position: absolute;
-        border-radius: 50%;
+    & p{
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
         background-color: white;
-    }
+        &.fa-check{
+            color: $cyan;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 2px;
+        }
 
-    i{
-        position: absolute;
-        font-size: 20px;
-        left: 7px;
-        top: 7px;
-        color: $cyan;
+        
+    }
+    &:hover, &:active{
+        &.validation{
+        opacity: 1;
+        transform: translateX(0%);
+    }
     }
 }
+
+
+
+
+
+
+/********* ANIMATIONS CHOICE STAIRCASE **********/
+
+
+
+.delay-menu-1 {
+    transform-origin: right;
+    animation: show-menu 500ms 800ms forwards;
+  }
+   
+  .delay-menu-2 {
+    transform-origin: right;
+    animation: show-menu 500ms 1000ms forwards;
+  }
+   
+  .delay-menu-3 {
+    transform-origin: right;
+    animation: show-menu 500ms 1200ms forwards;
+  }
+
+
+
+/*.anim1{
+    animation: anim-choice 1s ;
+}
+.anim2{
+    animation: anim-choice 1.5s ;
+}
+.anim3{
+    animation: anim-choice 2s ;
+}
+.anim4{
+    animation: anim-choice 2.5s ;
+}
+.anim5{
+    animation: anim-choice 3s ;
+}
+.anim6{
+    animation: anim-choice 3.5s ;
+}
+.anim7{
+    animation: anim-choice 4s ;
+}
+.anim8{
+    animation: anim-choice 4.5s ;
+}
+.anim9{
+    animation: anim-choice 5s ;
+}
+.anim10{
+    animation: anim-choice 5.5s ;
+}
+.anim11{
+    animation: anim-choice 6s ;
+}
+.anim12{
+    animation: anim-choice 6.5s ;
+}
+.anim13{
+    animation: anim-choice 7s ;
+}
+.anim14{
+    animation: anim-choice 7.5s ;
+}
+.anim15{
+    animation: anim-choice 8s ;
+}
+.anim16{
+    animation: anim-choice 8.5s ;
+}*/

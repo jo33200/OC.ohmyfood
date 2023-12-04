@@ -93,29 +93,22 @@
 
 
 
-@keyframes anim-scale { 
+@keyframes anim-click { 
     0% {
         transform: scaleX(1);
         
     }
     100% {
+        
         transform: scaleX(-60px);
         
     }
      }
 
-     @keyframes anim-validation { 
-        0% {
-            transform: translateX(0px);
-        }
-        100% {
-            transform: translateX(-59px);
-        }
-         }
-@keyframes anim-choice {
+@keyframes show-menu {
     0% {
         transform: translateX(-500px);
-        opacity: 1;
+        opacity: 0;
     }
 
     100% {
@@ -123,55 +116,5 @@
         opacity: 1;
     }
 }
-.anim1{
-    animation: anim-choice 1s ;
-}
-.anim2{
-    animation: anim-choice 1.5s ;
-}
-.anim3{
-    animation: anim-choice 2s ;
-}
-.anim4{
-    animation: anim-choice 2.5s ;
-}
-.anim5{
-    animation: anim-choice 3s ;
-}
-.anim6{
-    animation: anim-choice 3.5s ;
-}
-.anim7{
-    animation: anim-choice 4s ;
-}
-.anim8{
-    animation: anim-choice 4.5s ;
-}
-.anim9{
-    animation: anim-choice 5s ;
-}
-.anim10{
-    animation: anim-choice 5.5s ;
-}
-.anim11{
-    animation: anim-choice 6s ;
-}
-.anim12{
-    animation: anim-choice 6.5s ;
-}
-.anim13{
-    animation: anim-choice 7s ;
-}
-.anim14{
-    animation: anim-choice 7.5s ;
-}
-.anim15{
-    animation: anim-choice 8s ;
-}
-.anim16{
-    animation: anim-choice 8.5s ;
-}
-.anim17{
-    animation: anim-choice 9s ;
-}
+
 
