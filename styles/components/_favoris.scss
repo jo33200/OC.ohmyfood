@@ -18,8 +18,7 @@
             color: black;
             &:hover{
                 z-index: 3;
-                opacity: 0;
-                transform: 600ms;
+                opacity: 0; 
             }
         }
         & .full{
