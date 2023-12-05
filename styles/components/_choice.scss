@@ -18,6 +18,7 @@
     
     .indication{
         @include FlexRowBetween;
+        width: 100%;
     
         .info{
             @include FlexColumnStart;
@@ -39,14 +40,13 @@
      span{
         display: block;
         position: absolute;
-        left: 290px;
+        left: 100%;
         width: 60px;
         height: 100%;
         border-radius: 0px 16px 16px 0px;
         transition: all 0.3s ease-out;
-        opacity: 1;
+        opacity: 0;
         background-color: $cyan;
-        opacity: 1;
 
         i{
             display: flex;
@@ -72,21 +72,21 @@
     &:hover span{
         transform: translateX(-60px);
         opacity: 1;
-        transition: all 0.3s ease-out;
+        transition: all 0.3s ease-in-out;
     }
 
     &:hover .indication{
-        transform: scaleX(-20px);
+        transform: scaleX(-60px);
         opacity: 1;
         transition: all 0.3s ease-out;
     }
 
-   /* &:hover .price{
+   &:hover .price{
         transform: translateX(-60px);
         opacity: 1;
         transition: all 0.3s ease-out;
-        margin-right: 0;
-    }*/
+        margin-right: 5px;
+    }
     
     &:hover{
         h3,
@@ -98,7 +98,10 @@
         }
     }
     
-    
+    &:hover .fa-check{
+        transform: rotate(-360deg);
+        transition: all 0.5s ease-out;
+    }
     
 
    
