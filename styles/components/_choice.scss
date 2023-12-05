@@ -50,6 +50,7 @@
         opacity: 0;
         background-color: $cyan;
 
+
         i{
             display: flex;
             justify-content: center;
@@ -74,7 +75,7 @@
         transform: translateX(-60px);
         opacity: 1;
         transition: all 0.3s ease-in-out;
-    }
+        }
 
     &:hover .indication{
         transform: scaleX(-60px);
@@ -104,10 +105,6 @@
         transition: all 0.5s ease-out;
     }
     
-
-   
-    
-     
 
 
     @media screen and (min-width: $breakpoint) {
@@ -175,26 +172,3 @@
     }
 }
 */
-
-
-
-
-
-/********* ANIMATIONS CHOICE STAIRCASE **********/
-
-
-
-.delay-menu-1 {
-    transform-origin: right;
-    animation: show-menu 500ms 800ms forwards;
-  }
-   
-  .delay-menu-2 {
-    transform-origin: right;
-    animation: show-menu 500ms 1000ms forwards;
-  }
-   
-  .delay-menu-3 {
-    transform-origin: right;
-    animation: show-menu 500ms 1200ms forwards;
-  }

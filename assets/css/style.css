@@ -10,7 +10,7 @@
     opacity: 1;
   }
 }
-/********* LOADER **********/
+/**************** LOADER ****************/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -31,7 +31,33 @@
     z-index: -1;
   }
 }
-/********* CHOICE **********/
+/********* ANIMATIONS MENU STAIRCASE **********/
+@keyframes show-menu {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.delay-menu-1 {
+  transform-origin: right;
+  animation: show-menu 500ms 800ms forwards;
+}
+
+.delay-menu-2 {
+  transform-origin: right;
+  animation: show-menu 500ms 1000ms forwards;
+}
+
+.delay-menu-3 {
+  transform-origin: right;
+  animation: show-menu 500ms 1200ms forwards;
+}
+
+/***************** CHOICE *****************/
 @keyframes anim-menu {
   0% {
     transform: translateX(0px);
@@ -43,16 +69,6 @@
   }
   100% {
     transform: translateX(-60px);
-    opacity: 1;
-  }
-}
-@keyframes show-menu {
-  0% {
-    transform: translateX(-500px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -70,7 +86,7 @@ button {
 }
 button:hover {
   opacity: 0.9;
-  transition: 200ms;
+  transition: 400ms;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
@@ -306,22 +322,6 @@ button:hover {
     }
 }
 */
-/********* ANIMATIONS CHOICE STAIRCASE **********/
-.delay-menu-1 {
-  transform-origin: right;
-  animation: show-menu 500ms 800ms forwards;
-}
-
-.delay-menu-2 {
-  transform-origin: right;
-  animation: show-menu 500ms 1000ms forwards;
-}
-
-.delay-menu-3 {
-  transform-origin: right;
-  animation: show-menu 500ms 1200ms forwards;
-}
-
 @keyframes appear {
   0% {
     transform: translateY(50%);
@@ -332,7 +332,7 @@ button:hover {
     opacity: 1;
   }
 }
-/********* LOADER **********/
+/**************** LOADER ****************/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -353,7 +353,33 @@ button:hover {
     z-index: -1;
   }
 }
-/********* CHOICE **********/
+/********* ANIMATIONS MENU STAIRCASE **********/
+@keyframes show-menu {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.delay-menu-1 {
+  transform-origin: right;
+  animation: show-menu 500ms 800ms forwards;
+}
+
+.delay-menu-2 {
+  transform-origin: right;
+  animation: show-menu 500ms 1000ms forwards;
+}
+
+.delay-menu-3 {
+  transform-origin: right;
+  animation: show-menu 500ms 1200ms forwards;
+}
+
+/***************** CHOICE *****************/
 @keyframes anim-menu {
   0% {
     transform: translateX(0px);
@@ -365,16 +391,6 @@ button:hover {
   }
   100% {
     transform: translateX(-60px);
-    opacity: 1;
-  }
-}
-@keyframes show-menu {
-  0% {
-    transform: translateX(-500px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -819,7 +835,7 @@ ul {
     opacity: 1;
   }
 }
-/********* LOADER **********/
+/**************** LOADER ****************/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -840,7 +856,33 @@ ul {
     z-index: -1;
   }
 }
-/********* CHOICE **********/
+/********* ANIMATIONS MENU STAIRCASE **********/
+@keyframes show-menu {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.delay-menu-1 {
+  transform-origin: right;
+  animation: show-menu 500ms 800ms forwards;
+}
+
+.delay-menu-2 {
+  transform-origin: right;
+  animation: show-menu 500ms 1000ms forwards;
+}
+
+.delay-menu-3 {
+  transform-origin: right;
+  animation: show-menu 500ms 1200ms forwards;
+}
+
+/***************** CHOICE *****************/
 @keyframes anim-menu {
   0% {
     transform: translateX(0px);
@@ -852,16 +894,6 @@ ul {
   }
   100% {
     transform: translateX(-60px);
-    opacity: 1;
-  }
-}
-@keyframes show-menu {
-  0% {
-    transform: translateX(-500px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
     opacity: 1;
   }
 }

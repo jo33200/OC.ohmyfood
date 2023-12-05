@@ -17,7 +17,8 @@
 
 
 
-/********* LOADER **********/
+/**************** LOADER ****************/
+
 
 
 
@@ -49,7 +50,45 @@
 
 
 
-/********* CHOICE **********/
+/********* ANIMATIONS MENU STAIRCASE **********/
+
+
+
+
+@keyframes show-menu {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.delay-menu-1 {
+    transform-origin: right;
+    animation: show-menu 500ms 800ms forwards;
+  }
+   
+  .delay-menu-2 {
+    transform-origin: right;
+    animation: show-menu 500ms 1000ms forwards;
+  }
+   
+  .delay-menu-3 {
+    transform-origin: right;
+    animation: show-menu 500ms 1200ms forwards;
+  }
+
+
+
+
+
+/***************** CHOICE *****************/
+
 
 
 
@@ -73,18 +112,4 @@
         opacity: 1;
         
     }
-     }
-
-@keyframes show-menu {
-    0% {
-        transform: translateX(-500px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
 }
-
-
