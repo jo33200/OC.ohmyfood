@@ -23,6 +23,7 @@
         .info{
             @include FlexColumnStart;
             gap: 7px;
+            width: 90%;
             
 
             p{
@@ -34,6 +35,7 @@
             font-family: 'roboto', sans-serif;
             font-weight: 500;
             width: 30px;
+            margin-right: 10px;
         }
     }
 
@@ -52,10 +54,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 14px 10px 14px 10px;
-            border: 50%;
-            width: 20px;
-            height: 20px;
+            margin: 20px 16px 20px 16px;      
+            width: 10px;
+            height: 10px;
             border-radius: 50px;
             padding: 10px;
             background-color: white;
@@ -63,7 +64,7 @@
 
         .fa-check{
             color: $cyan;
-            font-size: 20px;
+            font-size: 16px;
         }
         
     }
@@ -91,7 +92,7 @@
     &:hover{
         h3,
         p {
-            width: 70%;
+            width: 80%;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
@@ -197,54 +198,3 @@
     transform-origin: right;
     animation: show-menu 500ms 1200ms forwards;
   }
-
-
-
-/*.anim1{
-    animation: anim-choice 1s ;
-}
-.anim2{
-    animation: anim-choice 1.5s ;
-}
-.anim3{
-    animation: anim-choice 2s ;
-}
-.anim4{
-    animation: anim-choice 2.5s ;
-}
-.anim5{
-    animation: anim-choice 3s ;
-}
-.anim6{
-    animation: anim-choice 3.5s ;
-}
-.anim7{
-    animation: anim-choice 4s ;
-}
-.anim8{
-    animation: anim-choice 4.5s ;
-}
-.anim9{
-    animation: anim-choice 5s ;
-}
-.anim10{
-    animation: anim-choice 5.5s ;
-}
-.anim11{
-    animation: anim-choice 6s ;
-}
-.anim12{
-    animation: anim-choice 6.5s ;
-}
-.anim13{
-    animation: anim-choice 7s ;
-}
-.anim14{
-    animation: anim-choice 7.5s ;
-}
-.anim15{
-    animation: anim-choice 8s ;
-}
-.anim16{
-    animation: anim-choice 8.5s ;
-}*/

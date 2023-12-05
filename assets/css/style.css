@@ -31,39 +31,6 @@
     z-index: -1;
   }
 }
-/********* HEART **********/
-.heart {
-  width: 21px;
-  height: 20px;
-  position: relative;
-}
-.heart .empty {
-  position: absolute;
-  z-index: 2;
-  opacity: 1;
-  font-size: 24px;
-  color: black;
-}
-.heart .empty:hover {
-  z-index: 3;
-  opacity: 0;
-  transform: 600ms;
-}
-.heart .full {
-  position: absolute;
-  z-index: 3;
-  opacity: 0;
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 24px;
-  transition: 600ms;
-}
-.heart .full:hover {
-  z-index: 2;
-  opacity: 1;
-}
-
 /********* CHOICE **********/
 @keyframes anim-menu {
   0% {
@@ -210,6 +177,7 @@ button:hover {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 7px;
+  width: 90%;
 }
 .choice .indication .info p {
   margin: 0px;
@@ -218,6 +186,7 @@ button:hover {
   font-family: "roboto", sans-serif;
   font-weight: 500;
   width: 30px;
+  margin-right: 10px;
 }
 .choice span {
   display: block;
@@ -234,17 +203,16 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 14px 10px 14px 10px;
-  border: 50%;
-  width: 20px;
-  height: 20px;
+  margin: 20px 16px 20px 16px;
+  width: 10px;
+  height: 10px;
   border-radius: 50px;
   padding: 10px;
   background-color: white;
 }
 .choice span .fa-check {
   color: #99e2d0;
-  font-size: 20px;
+  font-size: 16px;
 }
 .choice:hover span {
   transform: translateX(-60px);
@@ -264,7 +232,7 @@ button:hover {
 }
 .choice:hover h3,
 .choice:hover p {
-  width: 70%;
+  width: 80%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -354,54 +322,6 @@ button:hover {
   animation: show-menu 500ms 1200ms forwards;
 }
 
-/*.anim1{
-    animation: anim-choice 1s ;
-}
-.anim2{
-    animation: anim-choice 1.5s ;
-}
-.anim3{
-    animation: anim-choice 2s ;
-}
-.anim4{
-    animation: anim-choice 2.5s ;
-}
-.anim5{
-    animation: anim-choice 3s ;
-}
-.anim6{
-    animation: anim-choice 3.5s ;
-}
-.anim7{
-    animation: anim-choice 4s ;
-}
-.anim8{
-    animation: anim-choice 4.5s ;
-}
-.anim9{
-    animation: anim-choice 5s ;
-}
-.anim10{
-    animation: anim-choice 5.5s ;
-}
-.anim11{
-    animation: anim-choice 6s ;
-}
-.anim12{
-    animation: anim-choice 6.5s ;
-}
-.anim13{
-    animation: anim-choice 7s ;
-}
-.anim14{
-    animation: anim-choice 7.5s ;
-}
-.anim15{
-    animation: anim-choice 8s ;
-}
-.anim16{
-    animation: anim-choice 8.5s ;
-}*/
 @keyframes appear {
   0% {
     transform: translateY(50%);
@@ -433,39 +353,6 @@ button:hover {
     z-index: -1;
   }
 }
-/********* HEART **********/
-.heart {
-  width: 21px;
-  height: 20px;
-  position: relative;
-}
-.heart .empty {
-  position: absolute;
-  z-index: 2;
-  opacity: 1;
-  font-size: 24px;
-  color: black;
-}
-.heart .empty:hover {
-  z-index: 3;
-  opacity: 0;
-  transform: 600ms;
-}
-.heart .full {
-  position: absolute;
-  z-index: 3;
-  opacity: 0;
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 24px;
-  transition: 600ms;
-}
-.heart .full:hover {
-  z-index: 2;
-  opacity: 1;
-}
-
 /********* CHOICE **********/
 @keyframes anim-menu {
   0% {
@@ -546,6 +433,38 @@ button:hover {
 
 .fa-utensils {
   color: #ff79da;
+}
+
+.heart {
+  width: 21px;
+  height: 20px;
+  position: relative;
+}
+.heart .empty {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  font-size: 24px;
+  color: black;
+}
+.heart .empty:hover {
+  z-index: 3;
+  opacity: 0;
+  transform: 600ms;
+}
+.heart .full {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  background: linear-gradient(180deg, #ff79da, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 24px;
+  transition: 600ms;
+}
+.heart .full:hover {
+  z-index: 2;
+  opacity: 1;
 }
 
 .firstheader {
@@ -921,39 +840,6 @@ ul {
     z-index: -1;
   }
 }
-/********* HEART **********/
-.heart {
-  width: 21px;
-  height: 20px;
-  position: relative;
-}
-.heart .empty {
-  position: absolute;
-  z-index: 2;
-  opacity: 1;
-  font-size: 24px;
-  color: black;
-}
-.heart .empty:hover {
-  z-index: 3;
-  opacity: 0;
-  transform: 600ms;
-}
-.heart .full {
-  position: absolute;
-  z-index: 3;
-  opacity: 0;
-  background: linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 24px;
-  transition: 600ms;
-}
-.heart .full:hover {
-  z-index: 2;
-  opacity: 1;
-}
-
 /********* CHOICE **********/
 @keyframes anim-menu {
   0% {

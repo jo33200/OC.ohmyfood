@@ -1,0 +1,39 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../utils/colors";
+
+
+
+
+.heart{
+    width: 21px;
+    height: 20px;
+    position: relative;
+    
+        & .empty{
+            position: absolute;
+            z-index: 2;
+            opacity: 1;
+            font-size: 24px;
+            color: black;
+            &:hover{
+                z-index: 3;
+                opacity: 0;
+                transform: 600ms;
+            }
+        }
+        & .full{
+            position: absolute;
+            z-index: 3;
+            opacity: 0;
+            background: linear-gradient(180deg, $degrade, $blue);
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-size: 24px;
+            transition: 600ms;
+            &:hover{
+                z-index: 2;
+                opacity: 1;   
+            }
+        }
+}
