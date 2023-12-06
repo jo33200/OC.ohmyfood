@@ -12,27 +12,22 @@
     
         & .empty{
             position: absolute;
-            z-index: 2;
+            z-index: 3;
             opacity: 1;
             font-size: 24px;
             color: black;
+            background-color: #ffffff;
             &:hover{
-                z-index: 3;
                 opacity: 0; 
+                transition: 600ms;
             }
         }
         & .full{
-            position: absolute;
-            z-index: 3;
-            opacity: 0;
+            z-index: 2;
             background: linear-gradient(180deg, $degrade, $blue);
             background-clip: text;
             -webkit-background-clip: text;
+            color: transparent;
             font-size: 24px;
-            transition: 600ms;
-            &:hover{
-                z-index: 2;
-                opacity: 1;   
-            }
         }
 }
