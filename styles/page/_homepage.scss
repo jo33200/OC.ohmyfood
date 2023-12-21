@@ -46,13 +46,13 @@
 }
 
 .container{
-    @include FlexColumnStart;
+    @include FlexColumnCenter;
     gap: 20px;
     box-sizing: border-box;
     width: 80%;
 
     @media screen and (min-width: $breakpoint) {
-       width: 70%;
+       width: 90%;
        
     }
 
@@ -66,9 +66,13 @@
     @include FlexColumnCenter;
     
     ul{
-        @include FlexRowStart;
+        @include FlexColumnCenter;
         flex-wrap: wrap;
         gap: 20px; 
+        @media screen and (min-width: $breakpoint) {
+            @include FlexRowStart
+            
+         }
     }
     li{
         @include FlexRowCenter;
@@ -79,6 +83,16 @@
         height: 72px;
         position: relative;
         background-color: $backcolor;
+
+        @media screen and (min-width: $breakpoint) {
+            @include FlexRowStart;
+            width: 280px;
+            
+         }
+         @media screen and (min-width: $breakpoint2) {
+            width: 322px;
+            
+         }
             
         .number{
             position: absolute;
